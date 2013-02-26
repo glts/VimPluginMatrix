@@ -1,0 +1,87 @@
+body {
+	font-family: verdana, arial, helvetica, sans-serif;
+	font-size: 12pt;
+}
+div#header {
+	margin: 0 auto;
+	width: 40em;
+}
+div#footer {
+	font-size: smaller;
+}
+table p {
+	margin: 0;
+}
+table {
+	font-size: 10pt;
+	border-collapse: collapse;
+}
+tr:hover {
+	background-color: Gainsboro;
+}
+tr {
+	background-color: WhiteSmoke;
+}
+td, th {
+	border: 1px solid DarkGrey;
+	vertical-align: top;
+	padding: 0.3em;
+}
+th {
+	background-color: DarkGrey;
+}
+div.vim_org_data {
+	margin-top: 0.3em;
+	font-size: smaller;
+}
+div.github_data {
+	margin-top: 0.3em;
+	font-size: smaller;
+}
+td.name, td.type {
+	white-space: nowrap;
+}
+td.vim_org, td.github {
+	text-align: right;
+}
+td.vim, td.pnp {
+	text-align: center;
+}
+code {
+	background-color: GhostWhite;
+	border: 1px solid Gainsboro;
+	border-radius: 3px;
+	margin: 0 0.1em;
+	padding: 0 0.3em;
+}
+.favourite {
+	color: Gold;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.essential {
+	font-weight: bold;
+}
+span.recent {
+	padding: 2px;
+	border-radius: 3px;
+	white-space: nowrap;
+}
+span.recent1 {
+	background-color: Gold;
+	color: FireBrick;
+}
+span.recent2 {
+	background-color: DarkOrange;
+}
+span.recent3 {
+	background-color: FireBrick;
+	color: Gold;
+}
+span.recent4 {
+	background-color: DarkMagenta;
+	color: white;
+}
+span.recent5 {
+	background-color: LightSlateGrey;
+	color: white;
+}

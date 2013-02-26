@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Vim plugin matrix</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="filter.js"></script>
+  </head>
+  <body>
+    <div id="content">
+      <div id="header">
+        <h1>Vim plugin matrix</h1>
+        <p>Vim plugins I have heard recommended, talked about, listed most often.</p>
+        <p>The data in this table is curated by me, except for the rating and most recent update figures in the vim.org and Github columns which are gathered by script. The most recent update is colour-coded like this: <small><span class="recent recent1">last month</span></small> <small><span class="recent recent2">last 2 months</span></small> <small><span class="recent recent3">last 6 months</span></small> <small><span class="recent recent4">last year</span></small> <small><span class="recent recent5">more than a year</span></small>. The descriptions probably have a bias as do the "favourite" (<span class="favourite">★</span>) and "essential" (<strong>bold</strong>) hints.</p>
+        <p>I have included only general purpose plugins for now, so a few popular filetype-specific and tool-specific plugins like <em>a.vim</em> (C/C++), <em>rails.vim</em> (Rails), <em>Sparkup</em> (HTML) are missing.</p>
+      </div>
+      <div id="plugins">
+        <table cellspacing="0">
+          <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>
+              <select id="filter">
+                <option value="[all types]">[All types]</option>
+                {% for type in types|sort %}
+                  <option value="{{ type }}">{{ type }}</option>
+                {% endfor %}
+              </select>
+            </th>
+            <th>On vim.org</th>
+            <th>On Github</th>
+            <th>Vim</th>
+            <th><abbr title="plug and play">PnP</abbr></th>
+            <th>Dependencies</th>
+          </tr>
+          {% for plugin in plugins|sort(attribute='name') %}
+            <tr class="plugin">
+              <td class="favourite">{% if plugin.priority < 3 %}★{% endif %}</td>
+              <td class="name {% if plugin.priority==1 %}essential{% endif %}">{{ plugin.name }}</td>
+              <td class="description">{{ plugin.description|markdown }}</td>
+              <td class="type" title="{{ get_description_for_type(plugin.type) }}">{{ plugin.type }}</td>
+              <td class="vim_org">
+              {% if plugin.vim_org %}
+                <div>
+                  <a href="http://www.vim.org/scripts/script.php?script_id={{plugin.vim_org.script_id}}">vimscript#{{ plugin.vim_org.script_id }}</a>
+                </div>
+                <div class="vim_org_data">
+                {% if plugin.vim_org.rating and plugin.vim_org.updated %}
+                  {% set recent, description = get_recentness_for_date(plugin.vim_org.updated) %}
+                  ☆{{ plugin.vim_org.rating }}&nbsp;<span class="recent recent{{recent}}" title="{{ description }}">{{ plugin.vim_org.updated }}</span>
+                {% endif %}
+                </div>
+              {% endif %}
+              </td>
+              <td class="github">
+              {% if plugin.github %}
+                <div>
+                  <a href="https://github.com/{{plugin.github.repo}}">{{ plugin.github.repo }}</a>
+                </div>
+                <div class="github_data">
+                {% if plugin.github.rating and plugin.github.updated %}
+                  {% set recent, description = get_recentness_for_date(plugin.github.updated) %}
+                  ☆{{ plugin.github.rating }}&nbsp;<span class="recent recent{{recent}}" title="{{ description }}">{{ plugin.github.updated }}</span>
+                {% endif %}
+                </div>
+              {% endif %}
+              </td>
+              <td class="vim" title="Minimum Vim version required">{{ plugin.vim }}</td>
+              <td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+                {% if plugin.pnp %}✓{% endif %}
+              </td>
+              <td>{{ plugin.dependencies|markdown }}</td>
+            </tr>
+          {% endfor %}
+        </table>
+      </div>
+      <div id="footer">
+        <p>Data for {{ plugins|length }} plugins last updated on {{ date }}. See <a href="https://github.com/glts/VimPluginMatrix">https://github.com/glts/VimPluginMatrix</a> for more information.</p>
+      </div>
+    </div>
+  </body>
+</html>

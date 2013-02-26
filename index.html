@@ -1,0 +1,1369 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Vim plugin matrix</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" src="filter.js"></script>
+	</head>
+	<body>
+		<div id="content">
+			<div id="header">
+				<h1>Vim plugin matrix</h1>
+				<p>Vim plugins I have heard recommended, talked about, listed most often.</p>
+				<p>The data in this table is curated by me, except for the rating and most recent update figures in the vim.org and Github columns which are gathered by script. The most recent update is colour-coded like this: <small><span class="recent recent1">last month</span></small> <small><span class="recent recent2">last 2 months</span></small> <small><span class="recent recent3">last 6 months</span></small> <small><span class="recent recent4">last year</span></small> <small><span class="recent recent5">more than a year</span></small>. The descriptions probably have a bias as do the "favourite" (<span class="favourite">★</span>) and "essential" (<strong>bold</strong>) hints.</p>
+				<p>I have included only general purpose plugins for now, so a few popular filetype-specific and tool-specific plugins like <em>a.vim</em> (C/C++), <em>rails.vim</em> (Rails), <em>Sparkup</em> (HTML) are missing.</p>
+			</div>
+			<div id="plugins">
+				<table cellspacing="0">
+					<tr>
+						<th></th>
+						<th>Name</th>
+						<th>Description</th>
+						<th>
+							<select id="filter">
+								<option value="[all types]">[All types]</option>
+								
+									<option value="add-on">add-on</option>
+								
+									<option value="buffer management">buffer management</option>
+								
+									<option value="completion">completion</option>
+								
+									<option value="framework">framework</option>
+								
+									<option value="plugin management">plugin management</option>
+								
+									<option value="utility">utility</option>
+								
+							</select>
+						</th>
+						<th>On vim.org</th>
+						<th>On Github</th>
+						<th>Vim</th>
+						<th><abbr title="plug and play">PnP</abbr></th>
+						<th>Dependencies</th>
+					</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">abolish.vim</td>
+							<td class="description"><p>Simplifies working with "variants" of words such as abbreviations, smart-case search and substitute, and case transformations like <code>CamelCase</code> to <code>snake_case</code>.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1545">vimscript#1545</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆126&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2009-10-09</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-abolish">tpope/vim-abolish</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆142&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-23</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">AutoClose</td>
+							<td class="description"><p>Inserts the matching closing counterpart whenever <code>'</code> <code>"</code> <code>(</code> <code>[</code> <code>{</code> is typed. <em>Note:</em> There is another plugin with the same name.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1849">vimscript#1849</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆878&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2009-06-19</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">6.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">AutoComplPop</td>
+							<td class="description"><p>Automatically shows a popup menu with completions in insert mode. Keyword and path completion, and additionally omni completion for some file types.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1879">vimscript#1879</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆4034&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2009-12-12</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">Buffergator</td>
+							<td class="description"><p>Browse open buffers (only buffers!). Buffers are shown in a split window and can be previewed or opened in a tab or split.</p></td>
+							<td class="type" title="buffer management: plugins helping with finding and navigating buffers, windows, files, etc.">buffer management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3619">vimscript#3619</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆103&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-11-06</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">Command-T</td>
+							<td class="description"><p>Efficiently find files, buffers, tags, and file locations using fuzzy search. Matches are presented in a split window which filters as you type. Has a compiled component.</p></td>
+							<td class="type" title="buffer management: plugins helping with finding and navigating buffers, windows, files, etc.">buffer management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3025">vimscript#3025</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆640&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-06-20</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Ruby, C</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">commentary.vim</td>
+							<td class="description"><p>Adds an operator <code>gc</code> (or <code>\\</code>) for toggling comments on/off, in normal and Visual mode. Very lean, natural to use.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3695">vimscript#3695</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆79&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-08-28</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-commentary">tpope/vim-commentary</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆214&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-19</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">ctrlp.vim</td>
+							<td class="description"><p>Navigate files, buffers, most recently used files, as well as tags, the quickfix list, runtime files and other things using fuzzy search. Matches are presented in a split window which filters as you type.</p></td>
+							<td class="type" title="buffer management: plugins helping with finding and navigating buffers, windows, files, etc.">buffer management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3736">vimscript#3736</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆436&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-29</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/kien/ctrlp.vim">kien/ctrlp.vim</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆1711&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-29</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">delimitMate.vim</td>
+							<td class="description"><p>Inserts the matching closing counterpart whenever <code>'</code> <code>"</code> <code>`</code> <code>(</code> <code>[</code> <code>{</code> <code>&lt;</code> is typed. Configurable.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2754">vimscript#2754</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆166&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-01-16</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Raimondi/delimitMate">Raimondi/delimitMate</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆273&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-12</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">EasyMotion</td>
+							<td class="description"><p>This plugin makes some basic Vim motion commands available in an alternative form: it highlights possible targets and allows you to jump there in one keystroke – no need for counts before motions.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3526">vimscript#3526</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆520&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-11-09</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Lokaltog/vim-easymotion">Lokaltog/vim-easymotion</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆600&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-11-24</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">easytags.vim</td>
+							<td class="description"><p>Automatically generates and maintains a global tags file with ctags (no more <code>E433: No tags file</code> errors).</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3114">vimscript#3114</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆465&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2012-01-15</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/xolox/vim-easytags">xolox/vim-easytags</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆151&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2012-01-15</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Exuberant ctags</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">FuzzyFinder</td>
+							<td class="description"><p>Navigate buffers, files, tags, directories, most recently used files and other things. The user interface is a one-line horizontal split showing the current fuzzy matches in a popup menu.</p></td>
+							<td class="type" title="buffer management: plugins helping with finding and navigating buffers, windows, files, etc.">buffer management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1984">vimscript#1984</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆1845&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2010-09-30</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p><em>L9</em> plugin</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">Gundo</td>
+							<td class="description"><p>Browse your undo history via a tree-like visual interface. Vim's "undo tree" remembers all states of a buffer, Gundo makes them usable.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3304">vimscript#3304</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆205&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-06-02</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.3</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td><p>Python</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name essential">matchit.zip</td>
+							<td class="description"><p>Extended matching with the <code>%</code> command: Jump between XML tags, <code>if</code> ... <code>endif</code> pairs, etc. <em>Note:</em> This plugin is included with Vim, see <code>:h matchit-install</code>.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=39">vimscript#39</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆2049&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2008-01-29</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">6.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">neocomplcache</td>
+							<td class="description"><p>Automatic insert mode completion: Shows annotated completions such as keywords, paths, Vim commands, and other things in a popup menu. With the <em>neosnippet</em> plugin snippets are integrated in the menu.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2620">vimscript#2620</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆1045&nbsp;<span class="recent recent3" title="Last updated less than half a year ago">2012-09-01</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Shougo/neocomplcache">Shougo/neocomplcache</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆976&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-22</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">neosnippet</td>
+							<td class="description"><p>Code templating (snippet) engine and library. Works best together with <em>neocomplcache</em>, which autocompletes snippets so you don't have to remember the trigger word.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Shougo/neosnippet">Shougo/neosnippet</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆139&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-24</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">pathogen.vim</td>
+							<td class="description"><p>Modifies the runtime path so as to work as a lightweight plugin manager. Lets you keep all your plugins in tidy separate directories inside <code>~/.vim/bundle</code>.</p></td>
+							<td class="type" title="plugin management: plugins providing ways of managing Vim plugins">plugin management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2332">vimscript#2332</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆2845&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-14</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-pathogen">tpope/vim-pathogen</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆2797&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-17</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">Powerline</td>
+							<td class="description"><p>Enhances the functionality of the status line and makes it prettier. Shows current mode, filetype, file encoding, Git branch, etc. <em>Note:</em> This is the successor to the now deprecated <em>vim-powerline</em>.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Lokaltog/powerline">Lokaltog/powerline</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆500&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-25</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.3</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Python</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name essential">repeat.vim</td>
+							<td class="description"><p>Enables repeating of plugin-provided maps with the <code>.</code> command.</p></td>
+							<td class="type" title="framework: plugins providing functionality for other plugins, not for the end user directly">framework</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2136">vimscript#2136</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆166&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-01</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-repeat">tpope/vim-repeat</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆260&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-01</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">snipMate</td>
+							<td class="description"><p>Code templating (snippet) engine and library inspired by the TextMate editor. Snippets are triggered by pressing <code>&lt;Tab&gt;</code> after a trigger word (e.g. <code>if</code>) in insert mode.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2540">vimscript#2540</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆5575&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2009-07-13</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/msanders/snipmate.vim">msanders/snipmate.vim</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆1680&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-11-02</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">SuperTab</td>
+							<td class="description"><p>Use the <code>&lt;Tab&gt;</code> key for <em>all</em> insert mode completions. How and when which kind of completion is done can be customized.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1643">vimscript#1643</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆2130&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-06-01</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/ervandew/supertab">ervandew/supertab</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆650&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-19</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name essential">surround.vim</td>
+							<td class="description"><p>Operators for inserting, changing, deleting "surrounding" material such as parentheses, brackets, quotes, XML tags.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1697">vimscript#1697</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆2163&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-01</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-surround">tpope/vim-surround</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆1119&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-23</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">Syntastic</td>
+							<td class="description"><p>Checks syntax using external syntax checkers and marks error locations. The buffer must be saved for this. You may need to set up the appropriate external syntax checker first.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2736">vimscript#2736</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆382&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2012-02-16</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/scrooloose/syntastic">scrooloose/syntastic</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆1657&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-26</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>External syntax checkers</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">Tabular</td>
+							<td class="description"><p>Align text with the regular expression-powered <code>:Tabular</code> command.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/godlygeek/tabular">godlygeek/tabular</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆435&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-28</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">Tagbar</td>
+							<td class="description"><p>Browse tags of the current file in a split window. Allows you to gain a quick overview of classes, functions, constants etc.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3465">vimscript#3465</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆662&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-07-16</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/majutsushi/tagbar">majutsushi/tagbar</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆612&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-26</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Exuberant ctags</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">taglist.vim</td>
+							<td class="description"><p>Browse the tags of the current file or of different files in a split window. Gives a tidy overview of classes, functions, etc. in different files.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=273">vimscript#273</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆10408&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2007-09-21</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">6.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td><p>Exuberant ctags</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">tComment</td>
+							<td class="description"><p>Toggle comments on/off with the operator <code>gc</code> and various other commands.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1173">vimscript#1173</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆210&nbsp;<span class="recent recent3" title="Last updated less than half a year ago">2012-12-28</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tomtom/tcomment_vim">tomtom/tcomment_vim</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆170&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-06</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">textobj-indent</td>
+							<td class="description"><p>Adds text objects <code>ai</code> ("an indent") and <code>ii</code> ("inner indent") for blocks of lines with indentation similar to the current line.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2484">vimscript#2484</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆34&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2009-08-30</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/kana/vim-textobj-indent">kana/vim-textobj-indent</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆19&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-18</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p><em>textobj-user</em> plugin</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">textobj-user</td>
+							<td class="description"><p>Framework plugin for creating custom text objects. Most of the plugins depending on this have a name starting with "textobj-".</p></td>
+							<td class="type" title="framework: plugins providing functionality for other plugins, not for the end user directly">framework</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2100">vimscript#2100</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆105&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2012-01-18</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/kana/vim-textobj-user">kana/vim-textobj-user</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆81&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-30</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">The NERD Commenter</td>
+							<td class="description"><p>Configurable mappings and commands for commenting out and uncommenting things.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1218">vimscript#1218</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆1596&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2010-12-07</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/scrooloose/nerdcommenter">scrooloose/nerdcommenter</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆707&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-10</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">The NERD tree</td>
+							<td class="description"><p>Browse your file system with a visual tree-like explorer in a split window. Open files in preview, tab, or splits, bookmark files, filter hidden files, and more.</p></td>
+							<td class="type" title="buffer management: plugins helping with finding and navigating buffers, windows, files, etc.">buffer management</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1658">vimscript#1658</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆6383&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2011-12-28</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/scrooloose/nerdtree">scrooloose/nerdtree</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆2086&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-30</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">UltiSnips</td>
+							<td class="description"><p>Code templating (snippet) engine and library. Snippets are triggered by pressing <code>&lt;Tab&gt;</code> after a trigger word in insert mode.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/SirVer/ultisnips">SirVer/ultisnips</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆273&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-25</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td><p>Python</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite">★</td>
+							<td class="name ">unimpaired.vim</td>
+							<td class="description"><p>Pairs of bracket mappings for often used ex commands, e.g. <code>[q</code> <code>]q</code> to navigate the quickfix list, and for some additional paired operations.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1590">vimscript#1590</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆116&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-14</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/tpope/vim-unimpaired">tpope/vim-unimpaired</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆288&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-01-28</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">vim-addon-manager</td>
+							<td class="description"><p>... or "VAM" for short: Automatic plugin manager which supports a variety of version control systems. Draws from a "pool" of plugin sources.</p></td>
+							<td class="type" title="plugin management: plugins providing ways of managing Vim plugins">plugin management</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/MarcWeber/vim-addon-manager">MarcWeber/vim-addon-manager</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆259&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-24</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Git (?)</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">vim-powerline</td>
+							<td class="description"><p>Enhances the functionality of the status line and makes it prettier. Shows current mode, filetype, file encoding, Git branch, etc. <em>Note:</em> This is now deprecated in favour of the new Python-based <em>Powerline</em>.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=3881">vimscript#3881</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆138&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-02-29</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Lokaltog/vim-powerline">Lokaltog/vim-powerline</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆2054&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-22</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">vimwiki</td>
+							<td class="description"><p>Personal wiki that you can browse and edit interactively from inside Vim. The wiki is file-based and by default located inside <code>~/vimwiki</code>.</p></td>
+							<td class="type" title="add-on: plugins adding new functionality unrelated to core Vim">add-on</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2226">vimscript#2226</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆5569&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-07-07</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.3</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">Vundle</td>
+							<td class="description"><p>Automatic Github-oriented plugin manager. Can automatically fetch the latest plugin versions from Github.</p></td>
+							<td class="type" title="plugin management: plugins providing ways of managing Vim plugins">plugin management</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/gmarik/vundle">gmarik/vundle</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆2372&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-08</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.3</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Git</p></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">xptemplate</td>
+							<td class="description"><p>Code templating (snippet) engine and library. Snippets are triggered by pressing <code>&lt;Tab&gt;</code> after a trigger word or selected from a popup menu.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=2611">vimscript#2611</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆511&nbsp;<span class="recent recent5" title="Last updated more than a year ago">2012-01-12</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/drmingdrmer/xptemplate">drmingdrmer/xptemplate</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆72&nbsp;<span class="recent recent4" title="Last updated less than a year ago">2012-03-25</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.2</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">YankRing.vim</td>
+							<td class="description"><p>Remembers previous yanks, changes and deletes in a persistent history file. The history is accessed through mappings or a special split window.</p></td>
+							<td class="type" title="utility: plugins modifying, extending, or in a very general way building on top of core Vim functionality">utility</td>
+							<td class="vim_org">
+							
+								<div>
+									<a href="http://www.vim.org/scripts/script.php?script_id=1234">vimscript#1234</a>
+								</div>
+								<div class="vim_org_data">
+								
+									
+									☆845&nbsp;<span class="recent recent2" title="Last updated less than two months ago">2013-01-20</span>
+								
+								</div>
+							
+							</td>
+							<td class="github">
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.0</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								✓
+							</td>
+							<td></td>
+						</tr>
+					
+						<tr class="plugin">
+							<td class="favourite"></td>
+							<td class="name ">YouCompleteMe</td>
+							<td class="description"><p>Code completion engine which does "fast, as-you-type, fuzzy-search" keyword and other completion. Written partly in C++.</p></td>
+							<td class="type" title="completion: plugins dealing with automatic or triggered completion and/or code templating (snippets)">completion</td>
+							<td class="vim_org">
+							
+							</td>
+							<td class="github">
+							
+								<div>
+									<a href="https://github.com/Valloric/YouCompleteMe">Valloric/YouCompleteMe</a>
+								</div>
+								<div class="github_data">
+								
+									
+									☆1135&nbsp;<span class="recent recent1" title="Last updated less than a month ago">2013-02-26</span>
+								
+								</div>
+							
+							</td>
+							<td class="vim" title="Minimum Vim version required">7.3</td>
+							<td class="pnp" title="Is the plugin ready to go using a simple unzip/git clone/:UseVimball on a new Vim installation?">
+								
+							</td>
+							<td><p>Python, C++</p></td>
+						</tr>
+					
+				</table>
+			</div>
+			<div id="footer">
+				<p>Data for 39 plugins last updated on 2013-02-26. See <a href="https://github.com/glts/VimPluginMatrix">https://github.com/glts/VimPluginMatrix</a> for more information.</p>
+			</div>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,553 @@
+[
+    {
+        "name": "abolish.vim",
+        "description": "Simplifies working with \"variants\" of words such as abbreviations, smart-case search and substitute, and case transformations like `CamelCase` to `snake_case`.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 1545
+        },
+        "github": {
+            "repo": "tpope/vim-abolish"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "AutoClose",
+        "description": "Inserts the matching closing counterpart whenever `'` `\"` `(` `[` `{` is typed. *Note:* There is another plugin with the same name.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1849
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "6.0"
+    },
+    {
+        "name": "AutoComplPop",
+        "description": "Automatically shows a popup menu with completions in insert mode. Keyword and path completion, and additionally omni completion for some file types.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1879
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "Buffergator",
+        "description": "Browse open buffers (only buffers!). Buffers are shown in a split window and can be previewed or opened in a tab or split.",
+        "type": "buffer management",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3619
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "Command-T",
+        "description": "Efficiently find files, buffers, tags, and file locations using fuzzy search. Matches are presented in a split window which filters as you type. Has a compiled component.",
+        "type": "buffer management",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3025
+        },
+        "github": null,
+        "dependencies": "Ruby, C",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "commentary.vim",
+        "description": "Adds an operator `gc` (or `\\\\`) for toggling comments on/off, in normal and Visual mode. Very lean, natural to use.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 3695
+        },
+        "github": {
+            "repo": "tpope/vim-commentary"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "ctrlp.vim",
+        "description": "Navigate files, buffers, most recently used files, as well as tags, the quickfix list, runtime files and other things using fuzzy search. Matches are presented in a split window which filters as you type.",
+        "type": "buffer management",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3736
+        },
+        "github": {
+            "repo": "kien/ctrlp.vim"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "delimitMate.vim",
+        "description": "Inserts the matching closing counterpart whenever `'` `\"` `` ` `` `(` `[` `{` `<` is typed. Configurable.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2754
+        },
+        "github": {
+            "repo": "Raimondi/delimitMate"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "EasyMotion",
+        "description": "This plugin makes some basic Vim motion commands available in an alternative form: it highlights possible targets and allows you to jump there in one keystroke – no need for counts before motions.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3526
+        },
+        "github": {
+            "repo": "Lokaltog/vim-easymotion"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.2"
+    },
+    {
+        "name": "easytags.vim",
+        "description": "Automatically generates and maintains a global tags file with ctags (no more `E433: No tags file` errors).",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3114
+        },
+        "github": {
+            "repo": "xolox/vim-easytags"
+        },
+        "dependencies": "Exuberant ctags",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "FuzzyFinder",
+        "description": "Navigate buffers, files, tags, directories, most recently used files and other things. The user interface is a one-line horizontal split showing the current fuzzy matches in a popup menu.",
+        "type": "buffer management",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1984
+        },
+        "github": null,
+        "dependencies": "*L9* plugin",
+        "pnp": false,
+        "vim": "7.2"
+    },
+    {
+        "name": "Gundo",
+        "description": "Browse your undo history via a tree-like visual interface. Vim's \"undo tree\" remembers all states of a buffer, Gundo makes them usable.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 3304
+        },
+        "github": null,
+        "dependencies": "Python",
+        "pnp": true,
+        "vim": "7.3"
+    },
+    {
+        "name": "matchit.zip",
+        "description": "Extended matching with the `%` command: Jump between XML tags, `if` ... `endif` pairs, etc. *Note:* This plugin is included with Vim, see `:h matchit-install`.",
+        "type": "utility",
+        "priority": 1,
+        "vim_org": {
+            "script_id": 39
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "6.0"
+    },
+    {
+        "name": "neocomplcache",
+        "description": "Automatic insert mode completion: Shows annotated completions such as keywords, paths, Vim commands, and other things in a popup menu. With the *neosnippet* plugin snippets are integrated in the menu.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2620
+        },
+        "github": {
+            "repo": "Shougo/neocomplcache"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.2"
+    },
+    {
+        "name": "neosnippet",
+        "description": "Code templating (snippet) engine and library. Works best together with *neocomplcache*, which autocompletes snippets so you don't have to remember the trigger word.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "Shougo/neosnippet"
+        },
+        "dependencies": "",
+        "pnp": false,
+        "vim": "7.2"
+    },
+    {
+        "name": "The NERD Commenter",
+        "description": "Configurable mappings and commands for commenting out and uncommenting things.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1218
+        },
+        "github": {
+            "repo": "scrooloose/nerdcommenter"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "The NERD tree",
+        "description": "Browse your file system with a visual tree-like explorer in a split window. Open files in preview, tab, or splits, bookmark files, filter hidden files, and more.",
+        "type": "buffer management",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1658
+        },
+        "github": {
+            "repo": "scrooloose/nerdtree"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "pathogen.vim",
+        "description": "Modifies the runtime path so as to work as a lightweight plugin manager. Lets you keep all your plugins in tidy separate directories inside `~/.vim/bundle`.",
+        "type": "plugin management",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 2332
+        },
+        "github": {
+            "repo": "tpope/vim-pathogen"
+        },
+        "dependencies": "",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "vim-powerline",
+        "description": "Enhances the functionality of the status line and makes it prettier. Shows current mode, filetype, file encoding, Git branch, etc. *Note:* This is now deprecated in favour of the new Python-based *Powerline*.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 3881
+        },
+        "github": {
+            "repo": "Lokaltog/vim-powerline"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.2"
+    },
+    {
+        "name": "Powerline",
+        "description": "Enhances the functionality of the status line and makes it prettier. Shows current mode, filetype, file encoding, Git branch, etc. *Note:* This is the successor to the now deprecated *vim-powerline*.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "Lokaltog/powerline"
+        },
+        "dependencies": "Python",
+        "pnp": false,
+        "vim": "7.3"
+    },
+    {
+        "name": "repeat.vim",
+        "description": "Enables repeating of plugin-provided maps with the `.` command.",
+        "type": "framework",
+        "priority": 1,
+        "vim_org": {
+            "script_id": 2136
+        },
+        "github": {
+            "repo": "tpope/vim-repeat"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "snipMate",
+        "description": "Code templating (snippet) engine and library inspired by the TextMate editor. Snippets are triggered by pressing `<Tab>` after a trigger word (e.g. `if`) in insert mode.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2540
+        },
+        "github": {
+            "repo": "msanders/snipmate.vim"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "SuperTab",
+        "description": "Use the `<Tab>` key for *all* insert mode completions. How and when which kind of completion is done can be customized.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1643
+        },
+        "github": {
+            "repo": "ervandew/supertab"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "surround.vim",
+        "description": "Operators for inserting, changing, deleting \"surrounding\" material such as parentheses, brackets, quotes, XML tags.",
+        "type": "utility",
+        "priority": 1,
+        "vim_org": {
+            "script_id": 1697
+        },
+        "github": {
+            "repo": "tpope/vim-surround"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "Syntastic",
+        "description": "Checks syntax using external syntax checkers and marks error locations. The buffer must be saved for this. You may need to set up the appropriate external syntax checker first.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2736
+        },
+        "github": {
+            "repo": "scrooloose/syntastic"
+        },
+        "dependencies": "External syntax checkers",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "Tabular",
+        "description": "Align text with the regular expression-powered `:Tabular` command.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": null,
+        "github": {
+            "repo": "godlygeek/tabular"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "Tagbar",
+        "description": "Browse tags of the current file in a split window. Allows you to gain a quick overview of classes, functions, constants etc.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 3465
+        },
+        "github": {
+            "repo": "majutsushi/tagbar"
+        },
+        "dependencies": "Exuberant ctags",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "taglist.vim",
+        "description": "Browse the tags of the current file or of different files in a split window. Gives a tidy overview of classes, functions, etc. in different files.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 273
+        },
+        "github": null,
+        "dependencies": "Exuberant ctags",
+        "pnp": true,
+        "vim": "6.0"
+    },
+    {
+        "name": "tComment",
+        "description": "Toggle comments on/off with the operator `gc` and various other commands.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1173
+        },
+        "github": {
+            "repo": "tomtom/tcomment_vim"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "textobj-indent",
+        "description": "Adds text objects `ai` (\"an indent\") and `ii` (\"inner indent\") for blocks of lines with indentation similar to the current line.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 2484
+        },
+        "github": {
+            "repo": "kana/vim-textobj-indent"
+        },
+        "dependencies": "*textobj-user* plugin",
+        "pnp": false,
+        "vim": "7.2"
+    },
+    {
+        "name": "textobj-user",
+        "description": "Framework plugin for creating custom text objects. Most of the plugins depending on this have a name starting with \"textobj-\".",
+        "type": "framework",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 2100
+        },
+        "github": {
+            "repo": "kana/vim-textobj-user"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "UltiSnips",
+        "description": "Code templating (snippet) engine and library. Snippets are triggered by pressing `<Tab>` after a trigger word in insert mode.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "SirVer/ultisnips"
+        },
+        "dependencies": "Python",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "unimpaired.vim",
+        "description": "Pairs of bracket mappings for often used ex commands, e.g. `[q` `]q` to navigate the quickfix list, and for some additional paired operations.",
+        "type": "utility",
+        "priority": 2,
+        "vim_org": {
+            "script_id": 1590
+        },
+        "github": {
+            "repo": "tpope/vim-unimpaired"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "vim-addon-manager",
+        "description": "... or \"VAM\" for short: Automatic plugin manager which supports a variety of version control systems. Draws from a \"pool\" of plugin sources.",
+        "type": "plugin management",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "MarcWeber/vim-addon-manager"
+        },
+        "dependencies": "Git (?)",
+        "pnp": false,
+        "vim": "7.0"
+    },
+    {
+        "name": "vimwiki",
+        "description": "Personal wiki that you can browse and edit interactively from inside Vim. The wiki is file-based and by default located inside `~/vimwiki`.",
+        "type": "add-on",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2226
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.3"
+    },
+    {
+        "name": "Vundle",
+        "description": "Automatic Github-oriented plugin manager. Can automatically fetch the latest plugin versions from Github.",
+        "type": "plugin management",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "gmarik/vundle"
+        },
+        "dependencies": "Git",
+        "pnp": false,
+        "vim": "7.3"
+    },
+    {
+        "name": "xptemplate",
+        "description": "Code templating (snippet) engine and library. Snippets are triggered by pressing `<Tab>` after a trigger word or selected from a popup menu.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2611
+        },
+        "github": {
+            "repo": "drmingdrmer/xptemplate"
+        },
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.2"
+    },
+    {
+        "name": "YankRing.vim",
+        "description": "Remembers previous yanks, changes and deletes in a persistent history file. The history is accessed through mappings or a special split window.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 1234
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
+        "name": "YouCompleteMe",
+        "description": "Code completion engine which does \"fast, as-you-type, fuzzy-search\" keyword and other completion. Written partly in C++.",
+        "type": "completion",
+        "priority": 3,
+        "vim_org": null,
+        "github": {
+            "repo": "Valloric/YouCompleteMe"
+        },
+        "dependencies": "Python, C++",
+        "pnp": false,
+        "vim": "7.3"
+    }
+]

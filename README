@@ -1,0 +1,18 @@
+Vim plugin matrix
+-----------------
+
+This is the code I used to make the Vim plugin matrix at
+
+http://glts.github.com/VimPluginMatrix
+
+The plugin matrix is just a basic reference table for some of the most popular
+Vim plugins to point newbies to.
+
+I made this using
+
+    - Python 3.2.3
+
+    - Beautiful Soup 4.1.3 ("pip install beautifulsoup4")
+    - Jinja2 2.6           ("pip install Jinja2")
+    - Markdown 2.2.1       ("pip install markdown")
+    - Requests 1.1.0       ("pip install requests")
