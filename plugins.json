@@ -82,6 +82,19 @@
         "vim": "7.0"
     },
     {
+        "name": "CSApprox",
+        "description": "Use GUI colour schemes in the terminal. GUI-only colour schemes are automatically degraded to an approximation that works in the terminal.",
+        "type": "utility",
+        "priority": 3,
+        "vim_org": {
+            "script_id": 2390
+        },
+        "github": null,
+        "dependencies": "",
+        "pnp": true,
+        "vim": "7.0"
+    },
+    {
         "name": "ctrlp.vim",
         "description": "Navigate files, buffers, most recently used files, as well as tags, the quickfix list, runtime files and other things using fuzzy search. Matches are presented in a split window which filters as you type.",
         "type": "buffer management",
